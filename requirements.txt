@@ -1,2 +1,11 @@
+# Create a requirements.txt file for your Streamlit app
+requirements_content = """
 streamlit
-Pillow  # For image handling
+Pillow
+"""
+
+# Write the requirements to the file
+with open("requirements.txt", "w") as file:
+    file.write(requirements_content.strip())
+
+print("requirements.txt has been created with the necessary dependencies.")
